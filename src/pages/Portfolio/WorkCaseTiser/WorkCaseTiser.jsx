@@ -1,18 +1,18 @@
 import "./WorkCaseTiser.css";
 import { Link } from "react-router-dom";
 
-const WorkCase = ({ props: { imgSmall, imgMedium, imgLarge, desc, title } }) => {
+const WorkCase = ({ props: { imgSmall, imgMedium, imgLarge, imgXl, desc, title } }) => {
 
    return (
       <div className="workPreview">
          <div className="left">
             <div className="inner">
                <Link to="/">
-                  <div className="image">
-                     <img src={imgSmall} alt="" width="100%" />
+                  <div className="image small">
+                     <img src={imgSmall} alt="" className="screenShot" />
                   </div>
                </Link>
-               <div>
+               <div className="titleWrapper">
                   <Link to="/"><h3 className="title"><span className="arrow"> > </span>{title}</h3></Link>
                </div>
                <p className="descriptions">
@@ -23,12 +23,15 @@ const WorkCase = ({ props: { imgSmall, imgMedium, imgLarge, desc, title } }) => 
          <div className="right">
             <Link to="/">
                <div className="inner">
-                  <div className="image">
-                     <img src={imgLarge} alt="" width="100%" />
+               <div className="image xl">
+                     <img src={imgXl} alt="" className="screenShot" />
                   </div>
-                  {/* <div className="mimage">
-                  <img src={imgMedium} alt="" width="100%" />
-               </div> */}
+                  <div className="image large">
+                     <img src={imgLarge} alt="" className="screenShot" />
+                  </div>
+                  <div className="image medium">
+                  <img src={imgMedium} alt="" className="screenShot"/>
+               </div>
                </div>
             </Link>
          </div>

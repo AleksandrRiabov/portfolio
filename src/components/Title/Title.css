@@ -1,0 +1,19 @@
+.titleRoot{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.titleRoot .title{
+   font-family: "Lato", sans-serif;
+   font-weight: 900;
+   font-size: clamp(1.8em,calc(1em + 2.4vw),3em);
+}
+
+.titleRoot .subtitle {
+    margin: 0.4em auto 0;
+    font-size: clamp(1.125em,2vw,1.6em);
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 32em !important;
+}

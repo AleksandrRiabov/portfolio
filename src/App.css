@@ -4,7 +4,7 @@ a {
 }
 .container {
    width: 100%;
-   max-width: 1400px;
+   max-width: 1600px;
    margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6, p{
@@ -16,4 +16,9 @@ body{
    font-family: "Merriweather",serif;
    font-size: 18px;
    font-weight: 300;
+}
+
+.page{
+   margin: 45px auto;
+   max-width: 1860px;
 }
