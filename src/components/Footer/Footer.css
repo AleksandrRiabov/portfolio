@@ -2,7 +2,7 @@
    width: 100%;
    background-color: #222;
    color: #d8d8cd;
-   border-top: 0.8rem solid #008ccf;
+   border-top: 0.8rem solid var(--main-primary-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -83,7 +83,7 @@
    padding-left: 5px;
    text-transform: uppercase;
    text-decoration: underline;
-   text-decoration-color:#008ccf;
+   text-decoration-color: var(--main-primary-color);
 }
 
 .copiright {

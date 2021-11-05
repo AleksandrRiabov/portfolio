@@ -71,7 +71,7 @@
 }
 
 .menuLinks li:hover {
-    color: #006190;
+    color: var(--main-secondary-color);
 }
 .menuLink::after{
    content: "";
@@ -84,7 +84,7 @@
 }
 
 .menuActive {
-   color: #006190;
+   color: var(--main-secondary-color);
 }
 
 .menuActive::after {
@@ -100,7 +100,7 @@
    display: flex;
    justify-content: center;
    align-items: center; 
-   background-color: #006190;
+   background-color: var(--main-secondary-color);
    color: #fff;
    padding: 14px 0;
    font-weight: 700;

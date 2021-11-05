@@ -4,7 +4,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   color: #008ccf;
+   color: var(--main-primary-color);
    font-weight: 700;
 }
 
@@ -60,7 +60,7 @@
  }
 
  .navLink:hover, .navbarActive:hover{
-   color: #006190;
+   color: var(--main-secondary-color);
  }
 
  .navbarActive::after, .navLink:hover::after {
@@ -77,11 +77,11 @@
  }
 
 .navbarContacts {
-   background-color: #006190;
+   background-color: var(--main-secondary-color);
    color: #fff;
 }
 .navbarContacts:hover {
-   background-color: #004d74;;
+   background-color: var(--btn-hover-color);
 }
 
 
