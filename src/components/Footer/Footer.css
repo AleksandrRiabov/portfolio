@@ -124,4 +124,8 @@
    .footer .card{
       flex-direction: column;
    }
+	
+	.footer .about {
+		font-size: 16px;
+	}
 }

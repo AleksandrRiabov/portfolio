@@ -1,0 +1,27 @@
+
+.sectionAbout {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	color: var(--font-color-main);
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+
+.sectionAbout .img{
+	width: 120px;
+	height: 120px;
+	float: left;
+	margin: 0 15px 10px 0;
+}
+
+.sectionAbout p {
+	padding-bottom: 28px;
+}
+@media only screen and (max-width: 1183px){
+	.sectionAbout {
+		max-width: 768px;
+		font-size: 16px;
+	}
+}

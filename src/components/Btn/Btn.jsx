@@ -5,9 +5,9 @@ const Btn = ({ text, path }) => {
    return (
      <div className="btnWrapper">
  <div className="btn">
-         <Link to={path}>
+         <Link to={path || "/contacts"}>
             <div className="inner">
-               <p className="text">{text} </p>
+               <p className="text">{text || "Get In Touch"} </p>
             </div>
          </Link>
       </div>

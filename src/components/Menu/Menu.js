@@ -1,48 +1,62 @@
-import "./Menu.css";
-import { Link } from "react-router-dom";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import './Menu.css';
+import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
+import data from '../../data';
 
 const Menu = ({ pathname, setMenuOpen }) => {
-   const handleClick = (e) => {
-      if (e.target.classList.contains("menuLink") || e.target.classList.contains("menuContactsBtn")) {
-         setMenuOpen(false);
-      }
-   }
+	const handleClick = (e) => {
+		if (
+			e.target.classList.contains('menuLink') ||
+			e.target.classList.contains('menuContactsBtn')
+		) {
+			setMenuOpen(false);
+		}
+	};
 
-   return (
-      <div className="menu">
-         <div className="menuAside">
-            <div className="asideHeader">
-               <div className="menuSocials">
-                  <a href="https://github.com/AleksandrRiabov"
-                     target="_blank" rel="noreferrer">
-                     <GitHubIcon fontSize="inherit" />
-                  </a>
-                  <a href="https://linkedin.com"
-                     target="_blank"
-                     rel="noreferrer">
-                     <LinkedInIcon fontSize="inherit" />
-                  </a>
-               </div>
-               <div onClick={() => setMenuOpen(false)} className="closeIcon">
-                  <CloseIcon fontSize="inherit" />
-               </div>
-            </div>
-            <div
-               onClick={(e) => handleClick(e)}
-               className="menuLinksContainer">
-               <ul className="menuLinks">
-                  <Link to="/"><li className={`menuLink ${pathname === "/" ? "menuActive" : ""}`}>Home</li></Link>
-                  <Link to="/portfolio"><li className={`menuLink ${pathname === "/portfolio" ? "menuActive" : ""}`}>Portfolio</li></Link>
-                  <Link to="/about"><li className={`menuLink ${pathname === "/about" ? "menuActive" : ""}`}>About</li></Link>
-               </ul>
-               <Link to="/contacts"><div className="menuContactsBtn">Get In Touch</div></Link>
-            </div>
-         </div>
-      </div>
-   )
-}
+	return (
+		<div className="menu">
+			<div className="menuAside">
+				<div className="asideHeader">
+					<div className="menuSocials">
+						{data.socialLinks.map((link) => {
+							return (
+								<a href={link.url} target="_blank" rel="noreferrer">
+									{link.icon}
+								</a>
+							);
+						})}
+					</div>
+					<div onClick={() => setMenuOpen(false)} className="closeIcon">
+						<CloseIcon fontSize="inherit" />
+					</div>
+				</div>
+				<div onClick={(e) => handleClick(e)} className="menuLinksContainer">
+					<ul className="menuLinks">
+						{data.links.map(({ url, name, navLink }) => {
+							if (navLink) {
+								return (
+									<Link to={url}>
+										<li
+											className={`menuLink ${
+												pathname === url ? 'menuActive' : ''
+											}`}
+										>
+											{name}
+										</li>
+									</Link>
+								);
+							}
 
-export default Menu
+							return null;
+						})}
+					</ul>
+					<Link to="/contacts">
+						<div className="menuContactsBtn">Get In Touch</div>
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Menu;

@@ -6,7 +6,7 @@
    align-items: center;
 }
 .btn{
-   background-color: var(--main-secondary-color);
+   background-color: var(--main-primary-color);
    display: inline-block;
    color: #fff;
    font-size: 25px;
@@ -28,7 +28,7 @@
 }
 
 .btn:hover {
-	background-color: var(--btn-hover-color);
+	background-color: var(--main-secondary-color);
 }
 
 @keyframes moveAfter {
@@ -36,3 +36,9 @@
    50% {padding-right: 0px; padding-left: 6px;}
    to {padding-left: 0px;}
    }
+
+@media only screen and (max-width: 1183px){
+	.btn {
+		font-size: 20px;
+	}
+}

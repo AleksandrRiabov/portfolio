@@ -6,7 +6,7 @@ import Btn from "../../components/Btn/Btn"
 const Portfolio = () => {
 
    return (
-      <div className={"page"}>
+      <section className={"page"}>
          <Title
             title="Front-end Development Portfolio"
             subtitle="Succeed online with a website that is fast, easy to use, and built with best practices and a passion for design."
@@ -15,7 +15,7 @@ const Portfolio = () => {
             return <WorkCaseTiser key={wCase.title} props={{ ...wCase }} />
          })}
          <Btn text="Get In Touch" path="/contacts"/>
-      </div>
+      </section>
    )
 }
 

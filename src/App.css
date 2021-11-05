@@ -2,6 +2,7 @@
 	--main-primary-color: #008ccf;
 	--main-secondary-color: #006190;
 	--btn-hover-color: #004d74;
+	--font-color-main: #333;
 }
 
 a {
@@ -25,6 +26,6 @@ body{
 }
 
 .page{
-   margin: 45px auto;
+   margin: 45px auto 70px;
    max-width: 1860px;
 }
