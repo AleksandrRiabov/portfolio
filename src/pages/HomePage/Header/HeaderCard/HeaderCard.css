@@ -1,0 +1,56 @@
+.headerCard {
+	flex: 1;
+	background-color: var(--card-bg-color);
+	max-width: 32%;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.headerCardInner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2.2rem 2rem;
+}
+
+.headerCardIcon {
+	max-width: 120px;
+	padding: 20px 0;
+}
+
+.headrerCardTitle {
+	font-size: 22px;
+	font-family: 'Lato', sans-serif;
+	margin-bottom: 0.4em;
+}
+
+.headerCardDecs {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+@media only screen and (max-width: 943px) {
+	.headerCard {
+		max-width: 100%;
+		text-align: start;
+	}
+
+	.headerCardInner {
+		flex-direction: row;
+	}
+
+	.headerCardText {
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 463px) {
+	.headerCard {
+		text-align: center;
+	}
+	.headerCardInner {
+		flex-direction: column;
+		padding: 1rem;
+	}
+}

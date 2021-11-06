@@ -3,6 +3,7 @@
 	--main-secondary-color: #006190;
 	--btn-hover-color: #004d74;
 	--font-color-main: #333;
+	--card-bg-color: #f9f9f9;
 }
 
 a {
@@ -23,9 +24,14 @@ body{
    font-family: "Merriweather",serif;
    font-size: 18px;
    font-weight: 300;
+	color: #333;
 }
 
 .page{
    margin: 45px auto 70px;
    max-width: 1860px;
+   padding: 1rem;
+}
+.section {
+	margin-top: 50px;
 }

@@ -10,6 +10,7 @@ const data = {
 	portfolio: [
 		{
 			title: 'Pet Plate',
+			featured: true,
 			imgSmall: small,
 			imgMedium: previewMedium,
 			imgLarge: previewLarge,
@@ -19,6 +20,7 @@ const data = {
 		},
 		{
 			title: 'Pet Plate',
+			featured: false,
 			imgSmall: small,
 			imgMedium: previewMedium,
 			imgLarge: previewLarge,
