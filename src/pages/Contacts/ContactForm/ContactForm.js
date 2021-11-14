@@ -21,7 +21,7 @@ const ContactForm = ({ status, setStatus }) => {
 
   const isValidate = () => {
     if (user_name.replace(/\s/g, "") === "") {
-      setFormData({ ...formData, errorMessage: "Please Add your Name." });
+      setFormData({ ...formData, errorMessage: "Please Add Your Name." });
       return false;
     }
 
@@ -111,7 +111,7 @@ const ContactForm = ({ status, setStatus }) => {
         <input
           id="subject"
           type="text"
-          placeholder="eg, Job offer"
+          placeholder="eg, Job Offer"
           name="subject"
           value={formData.subject}
           onChange={handleChange}

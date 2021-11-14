@@ -14,29 +14,20 @@ const About = () => {
 						alt="Aleksandr Riabov"
 						className="img"
 					/>
-					I am a Front-end Developer with 12 years commercial experience, author of CSS3
-					Foundations, and graduate of Internet Technology. I create successful websites
-					that are fast, easy to use, and built with best practices.
+					I'm proactive and results oriented self-taught software development enthusiast, 
+					I have a keen interest in emerging technology and key strengths in HTML, CSS, JavaScript, React, Node.Js (Express), MongoDB. 
 				</p>
 
 				<p>
-					I work to make a better web; one that is fast, easy to use, beautiful,
-					accessible to all, and frustration-free. Regardless of your specific business
-					requirements, in solving these challenges, you have a great chance of finding
-					success online.
+				In addition to my professional qualifications,
+					   I have also recently completed the ‘The Web Developer Bootcamp’ with Udemy, 
+						and I use my free time to refine these skills wherever I can. 
+						In parallel, I have proactively sought work experience where I can utilise
+						 my computer knowledge whilst developing my interpersonal and communication skills. 
+						 I am now looking for a Junior Web Developer or Software Engineer role,
+							 where I can continue to learn and develop, whilst adding value to my team.
 				</p>
-				<p>
-					My main experience is in front-end development but I also have a passion for
-					design. Given that producing a modern website requires the combination of
-					design, server technology, and the layer that users interacts with, I believe
-					having experience in both design and development allows for making the most
-					optimal user experiences.
-				</p>
-				<p>
-					My clients have found that hiring me has saved them time and money, made it
-					easier to grow their website alongside their business, and made for a product
-					that is consistently of high quality.
-				</p>
+				
 			</div>
 			<Btn />
 		</section>
