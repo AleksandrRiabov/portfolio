@@ -1,24 +1,26 @@
 import './Header.css';
 import HeaderCard from './HeaderCard/HeaderCard';
-
+import JS from '../../../images/headerImages/JS.png';
+import nodeJs from '../../../images/headerImages/nodeJs.png';
+import mongoDB from '../../../images/headerImages/mongoDB.jpg';
 const Header = () => {
 	return (
 		<div className="homeHeader">
 			<div className="headerInner">
 				<HeaderCard
-					icon="https://icon-library.com/images/node-js-icon/node-js-icon-4.jpg"
+					icon={JS}
 					title="JavaScript"
 					text="Responsive websites built for an optimal user experience that achieves your business
 				goals."
 				/>
 				<HeaderCard
-					icon="https://green-api.com/integrations/img/nodejs.png"
+					icon={nodeJs}
 					title="Node.Js"
 					text="Responsive websites built eexeee rttgfrt for an optimal user experience that achieves your business
 				goals."
 				/>
 				<HeaderCard
-					icon="https://ih1.redbubble.net/image.438910675.6211/st,small,507x507-pad,600x600,f8f8f8.u2.jpg"
+					icon={mongoDB}
 					title="MongoDB"
 					text="Responsive websites built for an optimal user experience that achieves your business
 				goals."

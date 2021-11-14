@@ -1,0 +1,39 @@
+.contactOptions {
+	flex: 1;
+	max-width: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 3rem;
+}
+.contactOptionsInner {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.contactOption {
+	padding-bottom: 25px;
+}
+
+.optionName {
+	text-decoration: underline;
+}
+
+.contactOptionContent {
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+}
+
+.contactOptionIcon {
+	display: flex;
+	color: var(--main-primary-color);
+	padding-right: 3px;
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 960px) {
+	.contactOptions {
+	padding: 2rem;
+}
+}

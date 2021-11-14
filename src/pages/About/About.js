@@ -1,6 +1,7 @@
 import './About.css';
 import Title from '../../components/Title/Title';
 import Btn from "../../components/Btn/Btn";
+import Aleks from '../../images/Aleks.jpg';
 
 const About = () => {
 	return (
@@ -9,7 +10,7 @@ const About = () => {
 			<div className="sectionAbout">
 				<p className="inline">
 					<img
-						src="https://sun9-58.userapi.com/impf/cXOKd0Y_eYGsgd8GaQLt1fJ6roZa64bzU4H2kA/0XW6z4JN0-A.jpg?size=960x959&quality=96&sign=ebee967d352d3af08fffae191605b648&type=album"
+						src={Aleks}
 						alt="Aleksandr Riabov"
 						className="img"
 					/>

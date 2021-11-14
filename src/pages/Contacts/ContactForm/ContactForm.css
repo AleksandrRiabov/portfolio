@@ -1,0 +1,54 @@
+.contactFormContainer {
+	flex: 2;
+	background: #f9f9f9;
+	max-width: 600px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.contactForm label{
+	font-family: "Lato", sans-serif;
+	line-height: 1.5;
+}
+.contactForm input {
+	margin-bottom: 15px;
+	height: 25px;
+	padding: 5px;
+}	
+
+.contactForm textarea {
+	padding: 5px;
+}
+.contactFormBtn{
+	margin-top: 40px;
+	background-color: var(--main-primary-color);
+	width: 180px;
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	border: none;
+	padding: 0.7em 1em;
+	cursor: pointer;
+}
+
+.formLoading {
+	margin: 40px 0 20px;
+	padding: 0.7em 1em;
+}
+
+.contactForm .req {
+	color: #e93c1b;
+}
+
+.validationError{
+	color: red;
+	padding: 10px;
+	background: #dbecf4;
+}

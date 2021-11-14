@@ -10,8 +10,8 @@ const HomePage = () => {
 		<section className="page">
 			<section>
 				<Title
-					title="Successful Front-end Development"
-					subtitle="Hi. I’m Ian, a freelance Front-end Developer with 12 years commercial experience creating successful websites."
+					title="Self-Taught Developer"
+					subtitle="Hi. I’m Aleks, a highly motivated, self-starting developer seeking to launch a career building web applications and services."
 				/>
 				<Header />
 			</section>

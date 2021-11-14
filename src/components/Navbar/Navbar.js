@@ -23,7 +23,7 @@ const Navbar = () => {
 							{data.links.map(({ url, name, navLink }) => {
 								if (navLink) {
 									return (
-										<Link to={url}>
+										<Link to={url} key={name}>
 											<li className={ pathname === url ? 'navbarActive' : 'navLink'}>
 												{name}
 											</li>
