@@ -1,0 +1,64 @@
+.project{
+   display: flex;
+   justify-content: center;
+}
+
+.projectLeft {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.projectWebsite{
+   display: inline-block;
+}
+
+.projectTech {
+   margin-top: 40px;
+   padding: 30px 0 ;
+   background-color: var(--card-bg-color);
+   width: 100%;
+   max-width: 340px;
+}
+
+.projectTechTitle{
+   text-align: center;
+   font-family: "Lato", sans-serif;
+   font-size: 20px;
+   text-transform: uppercase;
+}
+
+.projectTechList{
+   line-height: 1.8;
+}
+
+.projectGithub{
+   font-size: 1.3rem;
+   color: var(--main-primary-color);
+   margin: 20px;
+}
+.projectRight {
+   flex: 3;
+}
+
+
+@media only screen and (max-width: 960px) {
+	.project{
+      flex-direction: column;
+   }
+
+  .projectTech {
+     max-width: none;
+  }
+
+   .projectTechList{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+   .projectTechList li{
+      width: 33%;
+      min-width: 200px;
+   }
+}
