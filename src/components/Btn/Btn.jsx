@@ -1,16 +1,18 @@
 import "./Btn.css";
 import { Link } from "react-router-dom";
 
-const Btn = ({ text, path, type = "button" }) => {
-  if (type === "submit") {
+const Btn = ({ text, path, link, type = "button" }) => {
+  if (link) {
     return (
-      <button type="submit" className="btnWrapper">
-        <div className="btn">
+    <div className="btnWrapper">
+      <div className="btn">
+        <a href={link} target="_blank" rel="noreferrer">
           <div className="inner">
-            <p className="text">{text || "Send Now"} </p>
+            <p className="text">{text || "Get In Touch"} </p>
           </div>
-        </div>
-      </button>
+        </a>
+      </div>
+    </div>
     );
   }
 

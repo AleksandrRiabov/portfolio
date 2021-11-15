@@ -17,9 +17,13 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 const data = {
 	portfolio: [
 		{
-			name: 'Export Planneng Tool', 
+			name: 'export-planning-tool', 
 			title: 'Export Planning Tool',
+			subtitle: ' subtitle',
 			featured: true,
+			url: 'https://guarded-savannah-03210.herokuapp.com/',
+			github: 'https://github.com/AleksandrRiabov/fs-planning-tool',
+			technologies: [],
 			imgSmall: pToolSmall,
 			imgMedium: pToolMedium,
 			imgLarge: pToolLarge,
@@ -28,9 +32,13 @@ const data = {
 				`MERN stack Application designed to simplify the process of estimating the required number of trailers. All estimates are based on the average of the five previous weeks, or specific days of the week. With app's charts, you can easily identify seasonal orders spikes, and be prepared for the growing demand.`,
 		},
 		{
-			name: 'Movies', 
+			name: 'movies', 
 			title: 'Movies App',
+			subtitle: ' subtitle',
 			featured: false,
+			url: 'https://aleksandrriabov.github.io/movies/', 
+			github: 'https://github.com/AleksandrRiabov/movies',
+			technologies: ["ReactJs", "Responsive CSS", "MaterialUI", "AJAX", "GitHub", "react-router-dom"],
 			imgSmall: moviesSmall,
 			imgMedium: moviesMedium,
 			imgLarge: moviesLarge,

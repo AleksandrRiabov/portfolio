@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Portfolio from './pages/Portfolio/Portfolio';
 import About from './pages/About/About';
 import Contacts from './pages/Contacts/Contacts';
+import Project from './pages/Project/Project';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/portfolio" exact>
             <Portfolio />
+          </Route>
+          <Route path="/portfolio/:projectName" exact>
+            <Project />
           </Route>
           <Route path="/about" exact>
             <About />
