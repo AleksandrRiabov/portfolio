@@ -84,7 +84,7 @@ const ContactForm = ({ status, setStatus }) => {
       <form ref={formRef} onSubmit={handleSubmit} className="contactForm">
         {errorMessage && <div className="validationError">{errorMessage}</div>}
         <label htmlFor="name">
-          Name<span className="req">*</span>
+          Name <span className="req">*</span>
         </label>
         <input
           id="name"

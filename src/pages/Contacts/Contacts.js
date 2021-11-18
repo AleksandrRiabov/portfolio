@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
-import "./Contacts.css";
-import Title from "../../components/Title/Title";
-import ContactOptions from "./ContactOptions/ContactOptions";
-import ContactForm from "./ContactForm/ContactForm";
-import ThankYou from "./ThankYou/ThankYou";
+import { useEffect, useState } from 'react';
+import './Contacts.css';
+import Title from '../../components/Title/Title';
+import ContactOptions from './ContactOptions/ContactOptions';
+import ContactForm from './ContactForm/ContactForm';
+import ThankYou from './ThankYou/ThankYou';
 
 const Contacts = () => {
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  const [status, setStatus] = useState({ message: "", sent: false });
+  const [status, setStatus] = useState({ message: '', sent: false });
 
   return (
-    <section className="page relative">
+    <section className='page relative'>
       {status.sent ? (
         <ThankYou message={status.message} />
       ) : (
         <div>
           <Title
-            title="Contact Aleks"
-            subtitle="Contact me on one of the option listed below or send a general message using the form."
+            title='Contact Aleks'
+            subtitle='Contact me on one of the options listed below or send a general message using the form.'
           />
-          <div className="contactPageContent">
+          <div className='contactPageContent'>
             <ContactForm status={status} setStatus={setStatus} />
             <ContactOptions />
           </div>

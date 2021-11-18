@@ -16,8 +16,12 @@
 
 .headerCardIcon {
 	width: 120px;
+	min-width: 120px;
 	height: 120px;
 	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .headrerCardTitle {

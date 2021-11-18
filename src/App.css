@@ -20,23 +20,30 @@ h1, h2, h3, h4, h5, h6, p{
    margin: 0;
 }
 
-body{
-   font-family: "Merriweather",serif;
-   font-size: 18px;
-   font-weight: 300;
+body {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-weight: 300;
 	color: #333;
 }
 
-.page{
-   margin: 45px auto 70px;
-   max-width: 1860px;
-   min-height: 40vh;
-   padding: 1rem;
+.page {
+	margin: 45px auto 70px;
+	max-width: 1860px;
+	min-height: 40vh;
+	padding: 1rem;
 }
 .section {
 	margin-top: 50px;
 }
 
-.relative{
+.relative {
 	position: relative;
+}
+
+@media only screen and (max-width: 1183px) {
+	.page {
+		margin: 20px auto 40px;
+	}
 }
