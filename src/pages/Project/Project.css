@@ -96,6 +96,19 @@
 	margin-top: 20px;
 }
 
+
+.notExist {
+	display: block;
+	margin-top: 100px;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+}
+
+.notExist .neLink{
+	color: var(--main-primary-color);
+	text-decoration: underline;
+}
+
 @media only screen and (max-width: 960px) {
 	.projectInner {
 		flex-direction: column-reverse;

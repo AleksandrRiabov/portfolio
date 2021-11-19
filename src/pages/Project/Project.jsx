@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import './Project.css';
 import Btn from '../../components/Btn/Btn';
@@ -28,7 +29,11 @@ const Project = () => {
   }, [projectName]);
 
   if (notExist) {
-    return <h1>This Project does not exist</h1>;
+    return (
+	   <section className="page"> 
+	     <h2 className="notExist">This page does not exist or has been removed, please go to <span className="neLink"><Link to="/portfolio">portfolio</Link></span> page..</h2>
+		</section>
+	);
   }
 
   const {

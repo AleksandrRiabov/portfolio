@@ -1,12 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
 import Portfolio from './pages/Portfolio/Portfolio';
 import About from './pages/About/About';
 import Contacts from './pages/Contacts/Contacts';
 import Project from './pages/Project/Project';
-import Footer from './components/Footer/Footer';
+import NotFound from './pages/NotFound/NotFound';
+
+
 
 function App() {
   return (
@@ -29,6 +32,7 @@ function App() {
           <Route path="/contacts" exact>
             <Contacts />
           </Route>
+			<Route path="/*" component={NotFound}/>
         </Switch>
         <Footer />
       </Router>
