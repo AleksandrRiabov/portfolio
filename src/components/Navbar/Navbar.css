@@ -31,8 +31,13 @@
 
 .logoName {
 	position: relative;
-	padding: 0 8px;
-	margin-right: 5px;
+    background: radial-gradient(circle, rgba(63,67,251,0) 37%, rgba(70,147,252,0.07886904761904767) 70%);
+
+    position: relative;
+    font-size: 15px;
+    padding: 0 15px 11px 4px;
+    margin-right: 5px;
+	border-radius: 5px;
 }
 
 .logoName::after {
@@ -41,7 +46,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border: 1px solid;
+	border: 1px solid #ebebeb;
 	border-radius: 4px;
 	position: absolute;
 }
