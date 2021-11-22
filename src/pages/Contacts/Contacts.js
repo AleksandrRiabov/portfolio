@@ -19,7 +19,7 @@ const Contacts = () => {
       ) : (
         <div>
           <Title
-            title='Contact Aleks'
+            title='Contact Aleksandr Riabov'
             subtitle='Contact me on one of the options listed below or send a general message using the form.'
           />
           <div className='contactPageContent'>
