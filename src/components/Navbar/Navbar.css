@@ -31,7 +31,7 @@
 
 .logoName {
 	position: relative;
-    background: radial-gradient(circle, rgba(63,67,251,0) 37%, rgba(70,147,252,0.07886904761904767) 70%);
+    background: radial-gradient(circle, rgba(63,67,251,0) 40%, rgba(0,140,207,0.07886904761904767) 89%);
 
     position: relative;
     font-size: 15px;
@@ -46,7 +46,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border: 1px solid #ebebeb;
+	border: 1px solid #008ccfbd;
 	border-radius: 4px;
 	position: absolute;
 }
