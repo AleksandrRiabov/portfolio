@@ -1,0 +1,24 @@
+.notFound {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.nfInner h1 {
+	font-size: 4rem;
+	margin-bottom: 0.2em;
+}
+
+.nfInner h2 {
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+}
+
+.nfInner .goBack {
+	display: flex;
+	justify-content: center;
+	color: var(--main-primary-color);
+	margin-top: 2rem;
+}
