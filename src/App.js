@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch} from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
@@ -9,9 +9,8 @@ import Contacts from './pages/Contacts/Contacts';
 import Project from './pages/Project/Project';
 import NotFound from './pages/NotFound/NotFound';
 
-
-
 function App() {
+	
   return (
     <div className="App">
       <Router>
