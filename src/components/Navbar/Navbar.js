@@ -4,7 +4,7 @@ import './Navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '../Menu/Menu';
 import data from '../../data';
-import CV from '../../CV.pdf'
+import CV from '../../assets/CV.pdf'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,9 @@ const Navbar = () => {
                 }
                 return null;
               })}
-              <a href={CV} ><li className='navLink'>Resume</li></a>
+              <a href={CV} target='_blank'>
+                <li className='navLink'>Resume</li>
+              </a>
               <Link to='/contacts'>
                 <li className='navbarContacts'>Get In Touch</li>
               </Link>
