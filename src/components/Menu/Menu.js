@@ -2,6 +2,7 @@ import "./Menu.css";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import data from "../../data";
+import CV from "../../assets/CV.pdf";
 
 const Menu = ({ pathname, setMenuOpen }) => {
   const handleClick = (e) => {
@@ -42,9 +43,8 @@ const Menu = ({ pathname, setMenuOpen }) => {
                 return (
                   <Link to={url} key={name}>
                     <li
-                      className={`menuLink ${
-                        pathname === url ? "menuActive" : ""
-                      }`}
+                      className={`menuLink ${pathname === url ? "menuActive" : ""
+                        }`}
                     >
                       {name}
                     </li>
@@ -54,7 +54,11 @@ const Menu = ({ pathname, setMenuOpen }) => {
 
               return null;
             })}
+            <a href={CV} target='_blank'>
+              <li className='menuLink'>Resume</li>
+            </a>
           </ul>
+
           <Link to="/contacts">
             <div className="menuContactsBtn">Get In Touch</div>
           </Link>
