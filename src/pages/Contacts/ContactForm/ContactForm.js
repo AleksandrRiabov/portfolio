@@ -52,6 +52,7 @@ const ContactForm = ({ status, setStatus }) => {
     sendEmail(e);
   };
 
+
   const sendEmail = (e) => {
     emailjs
       .sendForm(

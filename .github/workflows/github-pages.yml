@@ -1,0 +1,17 @@
+name: Github Env 
+
+on: push
+
+env: 
+  REACT_APP_EMAIL_SERVICE='service_8p6t4j5'
+  REACT_APP_EMAIL_TEMPLATE='template_x9phtvt'
+  REACT_APP_EMAIL_USER='user_UM0K5O3trmWOIepHfScXj'
+
+Jobs: 
+   job1:
+   runs-on: ubuntu-latest
+    steps: 
+    - name: Test
+    env: REACT_APP_EMAIL_SERVICE: ${{secret.REACT_APP_EMAIL_SERVICE}}
+         REACT_APP_EMAIL_TEMPLATE: ${{secret.REACT_APP_EMAIL_TEMPLATE}}
+         REACT_APP_EMAIL_USER: ${{secret.REACT_APP_EMAIL_USER}}
