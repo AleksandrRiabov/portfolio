@@ -1,6 +1,8 @@
 
-
-<h3>Stack: React.Js, MaterialUI, Email.Js </h3> 
+[![Mui Badge](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](#)
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![Javascript Badge](https://img.shields.io/badge/-Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)](#)
+[![Javascript Badge](https://img.shields.io/badge/-EMAIL.JS-green?style=for-the-badge)](#)
 
 
 # Personal Portfolio
@@ -12,7 +14,7 @@ Personal portfolio web page. It is a SPA (Single Page Application) built with RE
 
 ## Installation
   1. Clone the repository.
-  2. Navigate to cloned directory using '__cd module-1-challenge__' command.
+  2. Navigate to cloned directory using '__cd portfolio__' command.
   3. Open index.html file from terminal, using '__open index.html__' command.
 
 ## Screenshot
@@ -21,7 +23,3 @@ Personal portfolio web page. It is a SPA (Single Page Application) built with RE
 
 ## Credits
 [Aleksandr Riabov](https://github.com/AleksandrRiabov) :clap:
-
-## Technologies used
-![badmath](https://img.shields.io/badge/-CSS-blue)
-![badmath](https://img.shields.io/badge/-HTML-blue)
