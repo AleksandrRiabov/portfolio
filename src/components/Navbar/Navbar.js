@@ -4,7 +4,7 @@ import './Navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '../Menu/Menu';
 import data from '../../data';
-import CV from '../../assets/CV.pdf'
+import CV from '../../assets/Aleksandr-Riabov-CV.pdf'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

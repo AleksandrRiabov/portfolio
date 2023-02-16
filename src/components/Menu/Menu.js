@@ -2,7 +2,7 @@ import "./Menu.css";
 import { Link } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import data from "../../data";
-import CV from "../../assets/CV.pdf";
+import CV from "../../assets/Aleksandr-Riabov-CV.pdf";
 
 const Menu = ({ pathname, setMenuOpen }) => {
   const handleClick = (e) => {
