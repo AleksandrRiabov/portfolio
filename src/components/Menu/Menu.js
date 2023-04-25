@@ -54,7 +54,7 @@ const Menu = ({ pathname, setMenuOpen }) => {
 
               return null;
             })}
-            <a href={CV} target='_blank'>
+            <a href={CV} target='_blank' rel="noreferrer" >
               <li className='menuLink'>Resume</li>
             </a>
           </ul>
