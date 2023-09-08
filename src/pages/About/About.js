@@ -1,15 +1,19 @@
-import './About.css';
-import Title from '../../components/Title/Title';
-import Btn from '../../components/Btn/Btn';
-import Aleks from '../../images/Aleks.jpg';
+import "./About.css";
+import Title from "../../components/Title/Title";
+import Btn from "../../components/Btn/Btn";
+import Aleks from "../../images/Aleks.jpg";
+import useSendAnalytics from "../../analytics/useSendPageViewAnalytics";
+
 
 const About = () => {
+  useSendAnalytics({ title: "Aubout page" });
+  
   return (
-    <section className='page'>
-      <Title title='About Me' />
-      <div className='sectionAbout'>
-        <p className='inline'>
-          <img src={Aleks} alt='web developer' className='img' />
+    <section className="page">
+      <Title title="About Me" />
+      <div className="sectionAbout">
+        <p className="inline">
+          <img src={Aleks} alt="web developer" className="img" />
           I'm proactive and results oriented self-taught web development
           enthusiast, I have a keen interest in emerging technology and key
           strengths in HTML, CSS, JavaScript, React, Node.Js (Express), MongoDB.

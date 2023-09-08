@@ -1,8 +1,10 @@
-import './NotFound.css';
-import { Link } from 'react-router-dom';
-import ArrowLeftSharpIcon from '@mui/icons-material/ArrowLeftSharp';
+import "./NotFound.css";
+import { Link } from "react-router-dom";
+import ArrowLeftSharpIcon from "@mui/icons-material/ArrowLeftSharp";
+import useSendAnalytics from "../../analytics/useSendPageViewAnalytics";
 
 const NotFound = () => {
+  useSendAnalytics({ title: "404 Not Found page" });
   return (
     <section className="page notFound">
       <div className="nfInner">

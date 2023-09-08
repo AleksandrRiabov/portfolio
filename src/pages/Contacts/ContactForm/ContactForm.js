@@ -3,6 +3,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 
 import "./ContactForm.css";
 import emailjs from "emailjs-com";
+import sendEventAnalytics from "../../../analytics/sendEventAnalytics";
 
 const ContactForm = ({ status, setStatus }) => {
   const formRef = useRef();
@@ -15,7 +16,6 @@ const ContactForm = ({ status, setStatus }) => {
     message: "",
     errorMessage: "",
   });
-	
 
   const { user_name, user_email, subject, message, errorMessage } = formData;
 
@@ -48,10 +48,15 @@ const ContactForm = ({ status, setStatus }) => {
     if (!isValidate()) {
       return;
     }
+
     setLaoding(true);
+    sendEventAnalytics({
+      category: "Contact form",
+      action: "Email sent",
+      label: "Contact form email sent",
+    });
     sendEmail(e);
   };
-
 
   const sendEmail = (e) => {
     emailjs

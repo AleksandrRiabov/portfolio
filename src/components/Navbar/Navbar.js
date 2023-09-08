@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "../Menu/Menu";
 import data from "../../data";
 import CV from "../../assets/Aleksandr-Riabov-CV.pdf";
+import sendEventAnalytics from "../../analytics/sendEventAnalytics";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +40,18 @@ const Navbar = () => {
                 }
                 return null;
               })}
-              <a href={CV} target="_blank" rel="noreferrer">
+              <a
+                href={CV}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() =>
+                  sendEventAnalytics({
+                    category: "Resume View",
+                    action: "Open CV",
+                    label: "CV",
+                  })
+                }
+              >
                 <li className="navLink">Resume</li>
               </a>
               <Link to="/contacts">

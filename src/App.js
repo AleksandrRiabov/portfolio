@@ -8,6 +8,9 @@ import About from './pages/About/About';
 import Contacts from './pages/Contacts/Contacts';
 import Project from './pages/Project/Project';
 import NotFound from './pages/NotFound/NotFound';
+import ReactGA from "react-ga4";
+
+ReactGA.initialize('G-ERZJ09S779');
 
 function App() {
 	
