@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6acd0cab.chunk.css",
-    "main.js": "/portfolio/static/js/main.817adab4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.817adab4.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.ccb4049c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ccb4049c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
     "static/js/2.8c804753.chunk.js": "/portfolio/static/js/2.8c804753.chunk.js",
@@ -11,7 +11,7 @@
     "static/css/main.6acd0cab.chunk.css.map": "/portfolio/static/css/main.6acd0cab.chunk.css.map",
     "static/js/2.8c804753.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8c804753.chunk.js.LICENSE.txt",
     "static/media/Aleks.7e7c0f82.jpg": "/portfolio/static/media/Aleks.7e7c0f82.jpg",
-    "static/media/Aleksandr-Riabov-CV.42af232d.pdf": "/portfolio/static/media/Aleksandr-Riabov-CV.42af232d.pdf",
+    "static/media/Aleksandr-Riabov-CV.a0d6814c.pdf": "/portfolio/static/media/Aleksandr-Riabov-CV.a0d6814c.pdf",
     "static/media/JS.5761b291.png": "/portfolio/static/media/JS.5761b291.png",
     "static/media/mongoDB.81169275.jpg": "/portfolio/static/media/mongoDB.81169275.jpg",
     "static/media/moviesLarge.aa65c23e.jpg": "/portfolio/static/media/moviesLarge.aa65c23e.jpg",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.37da8305.js",
     "static/js/2.8c804753.chunk.js",
     "static/css/main.6acd0cab.chunk.css",
-    "static/js/main.817adab4.chunk.js"
+    "static/js/main.ccb4049c.chunk.js"
   ]
 }
